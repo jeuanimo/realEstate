@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./mystyles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
     <title>Real Estate</title>
 </head>
 <body>     
-<header>
+
+  <header class="site-init">
   <div class="navigation-bar">
   <h1>Real Estate</h1>
 
   <nav class="menu">
-   <a href="#">About</a>
-   <a href="#">Blog</a>
-   <a href="#">Contact</a>
+   <a href="about.html">About</a>
+   <a href="blog.html">Blog</a>
+   <a href="contact.html">Contact</a>
   </nav>
   </div>
 
@@ -24,11 +26,12 @@
 
     <h2>More about us</h2>
     <div class="flex-about">
-    <div>
+      <div>
     <img src="./img/icon1.svg" alt="">
     <h3>Security</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
     </div> 
+
      <div>
     <img src="./img/icon2.svg" alt="">
     <h3>Prices</h3>
@@ -40,11 +43,11 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
     </div>
     </div>
-    </div>
+    
     <section>
     <h2>Houses and Penthouses</h2>
-    </section>
-    <section class="flex-house">
+    <div class="houses-container">
+   
     <div class="house-item">
       <div class="house-item-img">
         <img src="./img/announcement1.jpg" alt="House on the lake">
@@ -53,16 +56,17 @@
         <h3>Luxury house on the lake</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, consequatur. Eius iusto error saepe quas sit voluptatem, dolore repellat accusamus deleniti voluptatum minima mollitia eaque enim? Exercitationem culpa ratione veniam!</p>
         <p>Price: $3,000,000.00</p>
-        <ul>
-          <li>
+
+        <ul class="items-container">
+              <li class="item-num"> 
             <img src="./img/icon_wc.svg" alt="icon"> 
             <p>3</p>
           </li>
-          <li>
+          <li class="item-num">
             <img src="./img/icon_room.svg" alt="icon"> 
             <p>4</p>
           </li>
-          <li>
+          <li class="item-num"> 
             <img src="./img/icon_parking.svg" alt="icon"> 
             <p>4</p>
           </li>
@@ -76,21 +80,22 @@
          <div class="house-item">
       <div class="house-item-img">
         <img src="./img/announcement2.jpg" alt="Luxury House">
-        <div class="house-item-text"></div>
+        </div>
+        <div class="house-item-text">
         <h3>Luxury House</h3>
          
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, consequatur. Eius iusto error saepe quas sit voluptatem, dolore repellat accusamus deleniti voluptatum minima mollitia eaque enim? Exercitationem culpa ratione veniam!</p>
         <p>Price: $3,000,000.00</p>
-        <ul>
-          <li>
+        <ul class="items-container">
+              <li class="item-num"> 
             <img src="./img/icon_wc.svg" alt="icon"> 
             <p>3</p>
           </li>
-          <li>
+          <li class="item-num">
             <img src="./img/icon_room.svg" alt="icon"> 
             <p>4</p>
           </li>
-          <li>
+          <li class="item-num">
             <img src="./img/icon_parking.svg" alt="icon"> 
             <p>4</p>
           </li>
@@ -103,30 +108,33 @@
            <div class="house-item">
          <div class="house-item-img">
            <img src="./img/announcement3.jpg" alt="House with a pool">
+           </div>
         
-                   <div class="flex-house">
-         <div class="house-item-text">
-        <h3>House with a pool</h3>
+          <div class="house-item-text">
+             <h3>House with a pool</h3>
         
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, consequatur. Eius iusto error saepe quas sit voluptatem, dolore repellat accusamus deleniti voluptatum minima mollitia eaque enim? Exercitationem culpa ratione veniam!</p>
-        <p>Price: $3,000,000.00</p>
-        <ul>
-          <li>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, consequatur. Eius iusto error saepe quas sit voluptatem, dolore repellat accusamus deleniti voluptatum minima mollitia eaque enim? Exercitationem culpa ratione veniam!</p>
+              <p>Price: $3,000,000.00</p>
+
+        <ul class="items-container">
+              <li class="item-num"> 
             <img src="./img/icon_wc.svg" alt="icon"> 
             <p>3</p>
           </li>
-          <li>
+          <li class="item-num">
             <img src="./img/icon_room.svg" alt="icon"> 
             <p>4</p>
           </li>
-          <li>
+          <li class="item-num">
             <img src="./img/icon_parking.svg" alt="icon"> 
             <p>4</p>
           </li>
         </ul>
+
  <a href="#" class="btn-details">See Details</a>
       </div>
-         </div>
+     </div>
+    </div>
   </section>
 </main>  
 </body>

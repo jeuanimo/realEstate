@@ -1,37 +1,49 @@
-/* Global*/
+/* Global */
 * {
-    margin:0
+  margin: 0
 }
+html,body{
+  height: 100%;
+}
+
 body {
-    font-family: arial;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
 }
+
+main{
+  flex: 1;
+}
+
 a {
-    text-decoration: none;
-    color:white;
-   
+  text-decoration: none;
+  color: white;
 }
+
 p{
-    line-height: 2;
+  line-height: 2;
 }
+
 img{
   max-width: 100%;
 }
+
 .container{
-    width: 80%;
-    margin:0 auto;
-}
-/*header*/
-header {
-    background-image: url(./img/header.jpg);
-    height: 300px;
-    background-size: cover;
-    color:white;
-    text-align: center;
- 
-    
+  width:80%;
+  margin: 0 auto;
 }
 
-   
+/*header*/
+
+.site-init {
+  background-image: url(./img/header.jpg);
+  height: 300px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
 .navigation-bar{
   display: flex;
   flex-direction: row;
@@ -39,29 +51,34 @@ header {
   height: 100px;
   align-items: center;
 }
-.menu a{
-    margin-right: 20px;
 
+.menu a{
+  margin-right: 20px;
 }
 .menu a:last-of-type{
-    margin-right: 0;
-}
-.menu a:hover{
-    color: #aaa;
+  margin-right: 0;
 }
 
 /*about*/
-.flex-about {
-    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-    
+
+.flex-about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*houses*/
+
+.houses-container{
+  display: flex;
 }
 .house-item{
   background-color: #dedede;
   margin-bottom: 20px;
   border: 1px solid gray;
+  margin-right: 20px;
 }
+
 .btn-details{
   display: block;
   background-color: rgb(211, 139, 5);
@@ -69,14 +86,110 @@ header {
   padding: 10px;
   margin: 10px;
 }
-.btn-details:hover {
-    background-color: #0056b3;
+
+.house-item-text{
+  padding: 20px;
 }
-.house-item-text {
-    padding: 20px;
+
+.items-container{
+  display: flex;
 }
-.flex-house {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.item-num{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+/*contact*/ 
+
+.contact-header{
+  background-color: orange;
+  height: 200px;
+}
+.contact-header a{
+  color:black;
+}
+
+.contact-text{
+  text-align: center;
+}
+.instructions{
+  font-weight: 700;
+}
+.instructions-details{
+  font-weight: 300;
+}
+
+.form{
+  background-color: #dedede;
+  padding: 20px;
+  border-radius: 10px;
+}
+fieldset{
+  border:1px solid gray;
+  border-radius: 10px;
+}
+legend{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+.input-control{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.input-control label{
+  width: 20%;
+}
+.input-control.radio-control{
+  flex-direction: column;
+}
+.input-control.radio-control label{
+  width: auto;
+  margin-bottom: 5x;
+}
+.input-control input,
+.input-control textarea,
+.input-control select{
+  width: 80%;
+  padding: 10px;
+  border:none;
+  border-radius: 5px;
+}
+
+footer{
+  background-color: #dedede;
+  height: 150x;
+
+}
+.footer-text{
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-bold{
+  font-weight: 700;
+  text-decoration: underline;
+}
+.policy-info{
+  display: flex;
+}
+.cr-text{
+  border-right: 2px solid black;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.sm-container{
+  display: flex;
+}
+.sm-icon{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  width: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right:10px ;
 }
