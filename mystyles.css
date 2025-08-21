@@ -61,7 +61,7 @@ img{
 
 /*about*/
 
-.flex-about{
+.about-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,7 +72,7 @@ img{
 .houses-container{
   display: flex;
 }
-.house-item{
+.houses-item{
   background-color: #dedede;
   margin-bottom: 20px;
   border: 1px solid gray;
@@ -87,7 +87,7 @@ img{
   margin: 10px;
 }
 
-.house-item-text{
+.houses-item-text{
   padding: 20px;
 }
 
@@ -192,4 +192,47 @@ footer{
   border-radius: 50%;
   padding: 5px;
   margin-right:10px ;
+}
+/*Tablets view*/
+@media((min-width:601px) and (max-width:768px)){
+   .about-container{
+       flex-direction: column;
+       text-align: justify;
+   }
+   .about-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .about-container img{
+    width: 20%;
+   }
+   .houses-container{
+       flex-direction: column;
+   }
+   .houses-item{
+    margin: 10px 0px;
+   }
+
+}
+/*Phone View*/
+@media (max-width: 600px) {
+   .about-container {
+       flex-direction: column;
+       text-align: justify;
+   }
+   .about-container div {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .about-container img {
+       width: 40%;
+   }
+   .houses-container {
+       flex-direction: column;
+   }
+   .houses-item {
+       margin: 10px 0px;
+   }
 }
